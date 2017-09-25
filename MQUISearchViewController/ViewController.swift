@@ -14,6 +14,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    @IBAction func beforeClicked(_ sender: Any) {
+        self.navigationController?.pushViewController(OlderSearchController(), animated: true)
+    }
+    
+    @IBAction func afterClicked(_ sender: Any) {
+        self.navigationController?.pushViewController(NewSearchController(), animated: true)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
